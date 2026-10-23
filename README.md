@@ -33,6 +33,6 @@ Deploy the `dist` directory to a static host. The build generates individual ent
 - Contact: location information and a downloadable business enquiry.
 - Quote dialog available throughout the website.
 
-Forms validate in the browser and download a text copy. They do not submit or store enquiries remotely. Business phone, email, street address and any form submission service must be supplied before adding direct contact or delivery functionality. Careers content describes areas of interest rather than confirmed vacancies. Equipment availability and route arrangements require confirmation for each shipment.
+Forms validate in the browser and download a text copy. They do not submit or store enquiries remotely. Contact details are centralised in `src/contact.ts`: 52733 off Lumumba Road, Heavy Industrial Area, Lusaka, Zambia; info@suvec.org; +260973828063. Address, email and phone links appear on the contact page and shared footer. A form submission service is still required for automatic enquiry delivery. Careers content describes areas of interest rather than confirmed vacancies. Equipment availability and route arrangements require confirmation for each shipment.
 
 Source lives in `src/`; supplied assets live in `public/`. The tracked `.openai/hosting.json` preserves the existing private Sites deployment identity. No deployment credentials are stored in source.
