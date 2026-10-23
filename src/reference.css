@@ -9,3 +9,5 @@ header{height:84px;padding-left:5.3%;padding-right:3%}.brand{height:100px;positi
 /* Supplied convoy and Scania images for the home page. */
 .hero{background-image:url('/home-hero-convoy.png')}
 .coverage-art.coverage-fleet>img{width:100%;max-width:100%;object-fit:cover!important;object-position:center}
+
+.fleet-image{height:clamp(260px,35vw,460px);max-height:460px;object-fit:cover;object-position:center 55%}

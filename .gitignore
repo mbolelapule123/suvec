@@ -5,3 +5,5 @@ dist/
 .env
 .env.*
 !.env.example
+deployment/
+suvec-mail-config.php

@@ -29,10 +29,10 @@ Deploy the `dist` directory to a static host. The build generates individual ent
 - Our Services: service selector, service details and expandable FAQs.
 - Our Fleet: capability filters and transport enquiry links.
 - Routes: destination search and selectable regional route details.
-- Careers: areas of interest and a downloadable career introduction.
-- Contact: location information and a downloadable business enquiry.
+- Careers: areas of interest and a career-interest submission form.
+- Contact: location information and an enquiry submission form.
 - Quote dialog available throughout the website.
 
-Forms validate in the browser and download a text copy. They do not submit or store enquiries remotely. Contact details are centralised in `src/contact.ts`: 52733 off Lumumba Road, Heavy Industrial Area, Lusaka, Zambia; info@suvec.org; +260973828063. Address, email and phone links appear on the contact page and shared footer. A form submission service is still required for automatic enquiry delivery. Careers content describes areas of interest rather than confirmed vacancies. Equipment availability and route arrangements require confirmation for each shipment.
+Forms submit to a server-side SMTP endpoint and show success only after the mail server accepts the message. For suvec.org, run `npm run build:hostinger` and follow [the server deployment instructions](server/DEPLOYMENT.md) to install the PHP endpoint and configure the mailbox securely. The static ChatGPT Sites preview does not execute PHP. Contact details are centralised in `src/contact.ts`. Careers content describes areas of interest rather than confirmed vacancies. Equipment availability and route arrangements require confirmation for each shipment.
 
 Source lives in `src/`; supplied assets live in `public/`. The tracked `.openai/hosting.json` preserves the existing private Sites deployment identity. No deployment credentials are stored in source.

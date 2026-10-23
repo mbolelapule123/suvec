@@ -7,7 +7,7 @@ const pages = [
  ['fleet','Our Fleet','Explore transport capabilities backed by a Suvec fleet of over 150 vehicles.'],
  ['routes','Routes','Explore domestic and regional transport destinations connecting Zambia with neighbouring markets.'],
  ['careers','Careers','Explore areas of career interest at Suvec Investments Limited and prepare an introduction.'],
- ['contact','Contact','Prepare your next transport enquiry for Suvec Investments Limited in Lusaka, Zambia.'],
+ ['contact','Contact','Send your transport enquiry to Suvec Investments Limited in Lusaka, Zambia.'],
 ];
 const html=await readFile('dist/index.html','utf8');
 for(const [path,title,description] of pages){
